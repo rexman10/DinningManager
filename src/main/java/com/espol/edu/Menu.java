@@ -2,18 +2,20 @@ package com.espol.edu;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Menu {
 	private List<Meal> items;
 	private int baseCost = 5;
-	private int mealsOrdered = 0;
+	private int mealsOrdered;
 	private int total = baseCost;
-	private HashMap<Meal, Integer> ordenados = new HashMap<Meal, Integer>();
+	private final Map<Meal, Integer> ordenados = new HashMap<Meal, Integer>();
 
 	public Menu(List<Meal> items) {
 		super();
 		this.items = items;
+		this.setMealsOrdered(0);
 	}
 
 	public List<Meal> getItems() {
@@ -42,6 +44,10 @@ public class Menu {
 
 	public int getMealsOrdered() {
 		return mealsOrdered;
+	}
+
+	public void setMealsOrdered(int mealsOrdered) {
+		this.mealsOrdered = mealsOrdered;
 	}
 
 	public void addMeal(int quantity) {
@@ -118,10 +124,10 @@ public class Menu {
 		while (answer == "") {
 			System.out.print("Desea ordenar otro platillo? (Si/No): ");
 			answer = input.next();
-			if(answer.equals("Si")) {
+			if("Si".equals(answer)) {
 				runDinningManager();
 			}
-			else if(answer.equals("No")) {
+			else if("No".equals(answer)) {
 				System.out.println("Gracias por su compra");
 				calculateCost();
 				break;
