@@ -1,0 +1,7 @@
+src/main/java/com/espol/edu/Main.java:5:	UseUtilityClass:	UseUtilityClass: This utility class has a non-private constructor
+src/main/java/com/espol/edu/Main.java:14:	LooseCoupling:	LooseCoupling: Avoid using implementation types like 'ArrayList'; use the interface instead
+src/main/java/com/espol/edu/Menu.java:10:	RedundantFieldInitializer:	RedundantFieldInitializer: Avoid using redundant field initializer for 'mealsOrdered'
+src/main/java/com/espol/edu/Menu.java:12:	ImmutableField:	ImmutableField: Field 'ordenados' may be declared final
+src/main/java/com/espol/edu/Menu.java:12:	LooseCoupling:	LooseCoupling: Avoid using implementation types like 'HashMap'; use the interface instead
+src/main/java/com/espol/edu/Menu.java:121:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
+src/main/java/com/espol/edu/Menu.java:124:	LiteralsFirstInComparisons:	LiteralsFirstInComparisons: Position literals first in String comparisons
